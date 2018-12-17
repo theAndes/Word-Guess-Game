@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>|AE|WordGame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <script src="assets/javascript/game.js"></script>
 </head>
+
 <body>
-    
+
+    <header>
+        <div id="top" class="bg-image">
+            <div class="header">
+                <h1>Word Guessing Game</h1>
+                <p>Press any key to start!</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="game">
+        <div class="content">
+            <div class="box game">CONTENT</div>
+            <div class="box ">
+                <div class="how-to">
+                    <p>You have '7' tries to guess the right letters for the word.</p>
+
+                </div>
+                <div class="score">
+                    <table>
+                        <tr>
+                            <th>Guesses left:</th>
+                            <th>Wins:</th>
+                            <th>Loses:</th>
+                        </tr>
+                        <tr>
+                            <td id="guesses">##</td>
+                            <td id="wins">##</td>
+                            <td id="loses">##</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Letters Played:</th>
+                        </tr>
+                        <tr>
+                            <td id="letters" colspan="3">"QWERTY7"</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://theandes.github.io/Responsive-Portfolio/portfolio.html">Back to Portfolio</a>
+    </footer>
+
 </body>
+
 </html>
