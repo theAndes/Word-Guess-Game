@@ -14,7 +14,7 @@ var guessedLetters = [];
 //Tries are dynamic for each word
 var win = 0;
 var lose = 0;
-var tries = word.length + wordList.length;
+var tries = word.length + 5;
 
 
 
@@ -47,7 +47,7 @@ startGame();
 document.onkeyup = function (game) {
 
     /////////////////////////////////////innerHTML guess count
-    document.getElementById('tries').innerHTML = word.length + wordList.length;
+    document.getElementById('tries').innerHTML = word.length + 5;
 
     /////////////////////function to check input and subtracts from the tries/////    
     function hiddenValue() {
@@ -75,23 +75,23 @@ document.onkeyup = function (game) {
 
         document.getElementById('word').innerHTML = hiddenWord.join(' ');
         guessedLetters.push(userInput);
-        document.getElementById('letters').innerHTML = guessedLetters;
-
+        
         //console.log(userInput);//
     }
     else {
         alert('Please enter a letter.');
-
+        
     }
-
+    
     if (tries == 0) {
         lose++;
         document.getElementById('loses').innerHTML = lose;
         alert("You are out of guesses! Here's a new word!")
         restart();
         console.log(lose);
-
+        
     }
+    document.getElementById('letters').innerHTML = guessedLetters;
     document.getElementById('guesses').innerHTML = tries;
 }
 

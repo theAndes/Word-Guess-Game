@@ -95,7 +95,7 @@ a:hover{
 
 @media (min-width:768px){
     .bg-image {
-        height: 400px;
+        height: 500px;
     }
 .header {
     text-align: unset;
@@ -109,11 +109,8 @@ a:hover{
 }
 .box{
     width: 49%;
-    height: 250px;
+    height: 150px;
     margin: 10px;
     padding-top: 2em;
-}
-.score{
-    margin: 3em;
 }
 }
