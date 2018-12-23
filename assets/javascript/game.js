@@ -104,7 +104,7 @@ document.onkeyup = function (game) {
     if(tries > 0 && hiddenWord.indexOf('__') == -1 ){
         win++
         document.getElementById('wins').innerHTML = win;
-        alert("Congratulations, You did it!");
+        alert("Congratulations, You did it! The word you got was: "+ word.toUpperCase() );
         restart();
         console.log(win);
 
